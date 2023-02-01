@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap');
+
+:root{
+    --AzulClaro: #2362b6;
+    --AzulEscuro: #011733;
+    --AzulOpaco: #0c2e5c;
+    --Branco: #fff;
+    --Preto: #000;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit' , sans-serif;
+    
+}
+
+
+
+/*cabecalho*/
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--AzulEscuro);
+    width: 100%;
+    padding: 10px 30px;
+    
+}
+
+.cabecalho_logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo_csrtech{
+    width: 100px;
+    height: 70px;
+}
+
+.img_face_insta:hover{   
+    -webkit-transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    transform: rotateZ(-30deg);
+    transition: all 0.7s ease;   
+}
+
+.lista_header_csrtech{
+    display: flex;
+    list-style: none;
+}
+
+.lista_header_csrtech li a{
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--AzulClaro);
+    position: relative;
+}
+
+.lista_header_csrtech a:before {
+    content: "";
+    position: absolute;
+    z-index: 15;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    background-color: var(--AzulClaro);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .lista_header_csrtech a:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+     transform: scaleX(1);
+}
+
+
+/*slides de imagem*/
+.section_slides_csrtech{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    animation: animado 16s ease-in-out infinite;
+    margin: 0px auto;
+}
+
+
+@keyframes animado{
+    0%,100%{
+        background-image: url(assets/header/img_site.png);        
+        
+    }
+    50%{
+        background-image: url(assets/header/img_not.jpg);
+    }
+    75%{
+        background-image: url(assets/header/img_desk.jpg);
+    }
+   
+}
+
+/*Main*/
+
+.section1_csrtech{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.IcoTexto_servicos_csrtech{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.conteineres{
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 3px 10px 0px var(--AzulOpaco);
+    border-radius: 20px;
+}
+
+.IcoTexto_servicos_csrtech h2{
+    color: var(--AzulEscuro);
+    font-size: 30px;
+}
+
+.IcoTexto_servicos_csrtech i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--AzulEscuro);
+    color: var(--AzulClaro);
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    
+}
+
+.section2_csrtech{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 20px;
+    
+}
+
+.section2_csrtech h1{
+    color: var(--AzulEscuro);
+    text-align: center;
+    font-size: 40px;
+}
+
+
+.section2_csrtech img{
+    width: 50px;
+}
+
+.container_information_csrtech{
+    
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px 0px var(--AzulOpaco);
+    
+
+}
+
+.container_information_csrtech img{
+    background-color: var(--AzulEscuro);
+    border-radius: 20px;
+    padding: 5px;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    
+}
+
+.container_information_csrtech h2{
+    color: var(--AzulEscuro);
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.container_information_csrtech p{
+    color: var(--AzulEscuro);
+    margin-top: 10px;
+}
+
+/*Contatos*/
+
+.contatos_orcamento_csrtech{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/footer/FooterImg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 35vh;
+    padding-top: 50px;
+    
+    position: relative;
+    margin-top: 20px;
+}
+
+.contatos_orcamento_csrtech img{
+    width: 100px;   
+    margin-left: 80px;
+    
+}
+
+.textos_information_csrtech{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.textos_information_csrtech h1{
+    color: var(--AzulClaro);
+    font-size: 20px;
+}
+
+.textos_information_csrtech p{
+    color: var(--Branco);
+}
+
+.textos_information_csrtech1 p{
+    color: var(--Branco);
+    width: 400px;
+}
+
+/*Rodapé*/
+
+.direitos_autorais_csrtech{
+    background-color: var(--Preto);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.direitos_autorais_csrtech p{
+    color:var(--Branco);
+}
+
+.direitos_autorais_csrtech span{
+    color: var(--AzulClaro);
+}
+
+/* botão whatsapp*/
+.botao_whats_flutuante{
+    position: absolute;
+}
+
+.img_botao_zap{
+    position: fixed;
+    right: 10px;
+    bottom: 25px;
+    z-index: 9999;
+}
+
+.img_botao_zap img{
+    width: 150px;
+}
+
+.img_botao_zap img:hover{
+    -moz-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+
+
+

@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap');
+
+:root{
+    --AzulClaro: #2362b6;
+    --AzulEscuro: #011733;
+    --AzulOpaco: #0c2e5c;
+    --Branco: #fff;
+    --Preto: #000;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit' , sans-serif;
+    
+}
+
+
+
+/*cabecalho*/
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--AzulEscuro);
+    width: 100%;
+    padding: 5px 30px;
+    
+}
+
+.cabecalho_logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo_csrtech{
+    width: 100px;
+    height: 70px;
+}
+
+.img_face_insta:hover{   
+    -webkit-transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    transform: rotateZ(-30deg);
+    transition: all 0.7s ease;   
+}
+
+.lista_header_csrtech{
+    display: flex;
+    list-style: none;
+}
+
+.lista_header_csrtech li a{
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--AzulClaro);
+    position: relative;
+}
+
+.lista_header_csrtech a:before {
+    content: "";
+    position: absolute;
+    z-index: 15;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    background-color: var(--AzulClaro);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .lista_header_csrtech a:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+     transform: scaleX(1);
+}
+
+.eclipse{
+    width: 100%;
+    margin-bottom: 10px;
+    z-index: 9999;
+    position: relative;
+}
+
+/*serviços*/
+
+.servicos_csrtech{
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+.servicos_csrtech h1{
+    color: var(--AzulEscuro);
+    font-size: 40px;
+
+}
+.servicos_csrtech span{
+    color: var(--AzulClaro);
+}
+
+.servico_edicao_csrtech{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 100%;   
+}
+
+.servicos_csrtech img{
+    margin-top: 30px;
+}
+
+.servicos_csrtech img:hover{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+}
+
+.servicos_csrtech h2{
+    color: var(--AzulOpaco);
+    font-size: 30px;
+}
+
+.servicos_csrtech p{
+    color: var(--AzulEscuro);
+}
+
+.servico_sub_csrtech{
+    width: 400px;
+}
+/*Rodapé*/
+
+.direitos_autorais_csrtech{
+    background-color: var(--Preto);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.direitos_autorais_csrtech p{
+    color:var(--Branco);
+}
+
+.direitos_autorais_csrtech span{
+    color: var(--AzulClaro);
+}
+
+/* botão whatsapp*/
+.botao_whats_flutuante{
+    position: absolute;
+}
+
+.img_botao_zap{
+    position: fixed;
+    right: 10px;
+    bottom: 25px;
+    z-index: 9999;
+}
+.img_botao_zap img{
+    width: 150px;
+}
+
+.img_botao_zap img:hover{
+    -moz-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}

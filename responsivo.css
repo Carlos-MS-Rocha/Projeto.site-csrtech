@@ -1,0 +1,183 @@
+@media screen and (max-width: 576px) {
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .section1_csrtech{
+        display: flex;
+    }
+
+    .IcoTexto_servicos_csrtech{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .section2_csrtech{
+        display: flex;
+        padding: 10px;
+    }
+
+    .section2_csrtech h1{
+        font-size: 40px;
+    }
+
+    .container_information_csrtech{
+        width: 100%;
+        text-align: center;
+    }
+
+    
+    .contatos_orcamento_csrtech{
+        flex-direction: column;
+        text-align: center;
+        height: 100vh;
+        padding-bottom: 50px;
+    }
+
+    .contatos_orcamento_csrtech img{
+        width: 150px;
+        margin-right: 90px;
+        margin-top: 150px;
+    }
+
+    .direitos_autorais_csrtech{
+        font-size: 10px;
+
+    }
+
+    /*serviços*/
+
+    .servicos_csrtech{
+        font-size: 30px;
+    }
+
+    .servico_edicao_csrtech{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    /*contatos*/
+
+    .contatos_csrtech{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .maps_local_csrtech{
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .maps_local_csrtech iframe{
+        width: 100%;
+    }
+
+    .botao_whats_flutuante{
+        left: 70%;
+    }
+}
+
+
+@media screen and (max-width: 792px) {
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .section1_csrtech{
+        display: flex;
+    }
+
+    .IcoTexto_servicos_csrtech{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .section2_csrtech{
+        display: flex;
+        padding: 10px;
+    }
+
+    .section2_csrtech h1{
+        font-size: 40px;
+    }
+
+    .container_information_csrtech{
+        width: 100%;
+        text-align: center;
+    }
+
+    
+    .contatos_orcamento_csrtech{
+        flex-direction: column;
+        text-align: center;
+        height: 100vh;
+        padding-bottom: 50px;
+    }
+
+    .contatos_orcamento_csrtech img{
+        width: 150px;
+        margin-right: 90px;
+        margin-top: 150px;
+    }
+
+    .direitos_autorais_csrtech{
+        font-size: 10px;
+
+    }
+
+    /*serviços*/
+
+    .servicos_csrtech{
+        font-size: 30px;
+    }
+
+    .servico_edicao_csrtech{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    /*contatos*/
+
+    .contatos_csrtech{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .maps_local_csrtech{
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .maps_local_csrtech iframe{
+        width: 100%;
+        
+    }
+
+    .botao_whats_flutuante{
+       left: 70%;
+    }
+}
